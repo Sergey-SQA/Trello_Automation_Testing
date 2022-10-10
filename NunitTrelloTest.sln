@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NunitTrelloTest", "NunitTrelloTest\NunitTrelloTest.csproj", "{7F8C543C-0AC7-4F09-A391-527CD1A73FDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F8C543C-0AC7-4F09-A391-527CD1A73FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F8C543C-0AC7-4F09-A391-527CD1A73FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F8C543C-0AC7-4F09-A391-527CD1A73FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F8C543C-0AC7-4F09-A391-527CD1A73FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46232DC1-EA01-4428-A191-A48DC2D8B2AE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+﻿{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "closed"
+    ],
+    "additionalProperties": false, // refers to required properties (if something comes in in additional: age etc.)
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "closed": {
+        "type": "boolean"
+      }
+    }
+  }
+}
