@@ -21,12 +21,10 @@ namespace NunitTrelloTest.Tests
 
         protected static RestRequest CreateRequest(string relativeUrl, Method httpMethod) => new(relativeUrl, httpMethod);
 
-        protected static RestRequest CreateRequestAuth(string relativeUrl, Method httpMethod)
-        {
-            return CreateRequest(relativeUrl, httpMethod)
+        protected static RestRequest CreateRequestAuth(string relativeUrl, Method httpMethod) =>
+            CreateRequest(relativeUrl, httpMethod)
                 .AddQueryParameter("key", ApiKey)
                 .AddParameter("token", ApiToken);
-        }
 
         protected static void AssertResponseMatchesExpectedJsonSchema(RestResponse response, string expectedSchemaFileName)
         {
