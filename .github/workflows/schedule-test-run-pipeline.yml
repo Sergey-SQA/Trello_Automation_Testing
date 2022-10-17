@@ -1,13 +1,8 @@
-name: .NET
+name: Scheduled Run
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
   schedule:
-  - cron: 00 7 * * 1-5
+  - cron: 27 6 * * 1-5
  
 jobs:
   build:
