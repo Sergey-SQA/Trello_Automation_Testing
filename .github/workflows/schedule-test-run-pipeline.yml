@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
   schedule:
   - cron: 30 18 * * 1-5
-  - cron: 30 15 * * 1-5
  
 jobs:
   build:
@@ -20,4 +19,10 @@ jobs:
     - name: Build
       run: dotnet build
     - name: Test
-      run: dotnet test
+      run: dotnet test --logger "trx;LogFileName=TestResults.trx"
+    - name: Parse Trx files
+      uses: NasAmin/trx-parser@v0.1
+      id: trx-parser
+      with:
+        TRX_PATH: ${{ github.workspace }}/NunitTrelloTest/TestResults
+        REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}          
