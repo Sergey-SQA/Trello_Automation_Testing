@@ -1,8 +1,10 @@
 name: Scheduled Run
 
 on:
+  workflow_dispatch:
   schedule:
   - cron: 30 18 * * 1-5
+  - cron: 30 15 * * 1-5
  
 jobs:
   build:
@@ -16,6 +18,6 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build
     - name: Test
       run: dotnet test
