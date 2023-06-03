@@ -34,7 +34,7 @@ namespace NunitTrelloTest.Tests.Boards
                 .AddParameter(queryParameter);
             var response = client.Execute(request);
             Assert.AreEqual(HttpStatusCode.Unauthorized, response.StatusCode);
-            Assert.AreEqual("unauthorized permission requested", response.Content.ToString());
+            Assert.AreEqual("invalid key", response.Content.ToString());
         }
     }
 }
