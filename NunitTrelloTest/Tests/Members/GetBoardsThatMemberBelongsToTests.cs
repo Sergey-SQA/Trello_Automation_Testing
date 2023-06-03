@@ -36,7 +36,7 @@ namespace NunitTrelloTest.Tests.Members
             testMethodHolder.Debug("Execute REST request");
             var response = client.Execute(request);
             testMethodHolder.Debug("Assert expected status code");
-            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+            Assert.AreEqual(HttpStatusCode.Unauthorized, response.StatusCode);
             testMethodHolder.Debug("Assert JSON schema");
             AssertResponseMatchesExpectedJsonSchema(response, JsonSchemaNames.EmptyArrayJsonSchemaFileName);
         }

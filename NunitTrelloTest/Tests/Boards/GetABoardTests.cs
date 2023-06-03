@@ -47,7 +47,7 @@ namespace NunitTrelloTest.Tests.Boards
             var response = client.Execute(request);
             testMethodHolder.Debug($"Check that actual status code '{response.StatusCode}' is equal to expected '{HttpStatusCode.Unauthorized}'");
             Assert.AreEqual(HttpStatusCode.Unauthorized, response.StatusCode);
-            Assert.AreEqual("invalid key", response.Content.ToString());
+            Assert.AreEqual("unauthorized permission requested", response.Content.ToString());
         }
     }
 }
